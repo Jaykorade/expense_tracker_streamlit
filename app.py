@@ -56,6 +56,7 @@ def login_page():
     user_id = st.text_input("User ID")
     password = st.text_input("Password", type='password')
 
+
     if st.button("Login"):
         if check_user_credentials(user_id, password):
             st.session_state.user_id = user_id
